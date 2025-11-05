@@ -37,6 +37,9 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+    # Assurez-vous que ce chemin pointe bien vers le dossier _site
+        path: ./_site
 
   # Deployment job
   deploy:
